@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Bruno Bulgaron - Desenvolvedor Web</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+  
+  <div class="wrapper">
+    <!-- Navbar -->
+    <header  id="home">
+      <nav id="navbar">
+        <ul class="myLinks">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <div class="hero" id="home">
+        <h1>Bruno Bulgaron</h1>
+        <div id="subtitle-container">
+          <span>Desenvolvedor Web</span>
+
+          <img src="./img/undraw_code_typing_7jnv.svg" alt="SVG typing">
+
+          <button>
+            <a href="#about">
+              <i class="fa fa-arrow-down" id="hero-arrow-down"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <!-- About -->
+      <section class="about" id="about">
+        <div class="about-container">
+          <h3>Quem sou eu?</h3>
+          <div class="second-container">
+            <img src="./img/bruno3.png" alt="Bruno Perfil">
+
+            <p id="sub">Sou um <strong>Desenvolvedor Web</strong> de 27 anos do Norte do Paraná. Meu foco atual é no Front-End, mas também crio aplicações Full-Stack (Front-End e Back-End).
+            <br />
+            <br />
+            <br />
+              <span>Sou apaixonado por <strong>Música</strong>. Minha maior motivação na área de Dev Web é poder utilizar a minha <strong>criatividade</strong> para a criação de aplicações incríveis.</span>
+            </p>
+
+            <button id="btn-projects" onclick="openCV()">
+              <i class="fa fa-arrow-down"></i>
+              Baixar CV
+            </button>
+            <div id="xtra-space"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <h3>Projetos</h3>
+
+        <div class="projects-container">
+          <div class="project-spotenu" onclick="openSpotenu()">Spotenu</div>
+          <div class="project-4eddit" onclick="open4eddit()">4eddit</div>
+          <div class="project-rappi4" onclick="openrappi4()">rappi4</div>
+          <div class="project-to-do-list" onclick="opentoDoList()">To-Do-List</div>
+        </div>
+
+        <div id="xtra-space"></div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h2>Contato</h2>
+
+        <p>Sinta-se livre para entrar em contato comigo através dos canais abaixo:</p>
+
+        <div class="contact-container">
+          <a href="mailto:brunohbulgaron@gmail.com">
+            <i class="fa fa-envelope"></i>
+            brunohbulgaron@gmail.com
+          </a>
+          <a href="https://github.com/brunobulgaron" target="_blank">
+            <i class="fa fa-github"></i>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/brunobulgaron/" target="_blank">
+            <i class="fa fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>2020 - Criado por Bruno Bulgaron</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
