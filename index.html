@@ -6,109 +6,260 @@
   
   <title>Bruno Bulgaron - Desenvolvedor Web</title>
   
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ef46968ae9.js" crossorigin="anonymous"></script>
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
-  
-  <div class="wrapper">
-    <!-- Navbar -->
-    <header  id="home">
-      <nav id="navbar">
-        <ul class="myLinks">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav" id="nav">
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5543996268360&text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20%C3%A0%20respeito%20dos%20seus%20servi%C3%A7os%20de%20Desenvolvimento%20Web." class="logo" title="Vamos conversar?" target="_blank">
+          <i class="fa fa-whatsapp whatsapp-nav"></i>
+          <span class="vamos-conversar">Vamos conversar?</span>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about-me" class="nav-link" id="about-nav">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" id="skills-nav">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link" id="portfolio-nav">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" id="contact-nav">Contato</a>
+          </li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
+  <!-- Header ends here -->
 
-    <main>
-      <!-- Hero -->
-      <div class="hero" id="home">
+  <!-- Back to top button -->
+  <button onclick="topFunction()" id="myBtn" title="Ir para o início">
+    <i class="fas fa-chevron-up"></i>
+  </button> 
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="header-area">        
+        <h3 class="single-animation">Olá, meu nome é</h3>
         <h1>Bruno Bulgaron</h1>
-        <div id="subtitle-container">
-          <span>Desenvolvedor Web</span>
-
-          <img src="./img/undraw_code_typing_7jnv.svg" alt="SVG typing">
-
-          <button>
-            <a href="#about">
-              <i class="fa fa-arrow-down" id="hero-arrow-down"></i>
-            </a>
-          </button>
-        </div>
+        <h2><span class="animate"></span></h2>
       </div>
 
-      <!-- About -->
-      <section class="about" id="about">
-        <div class="about-container">
-          <h3>Quem sou eu?</h3>
-          <div class="second-container">
-            <img src="./img/bruno3.png" alt="Bruno Perfil">
+      <a href="#about-me" class="scroll-down">
+        <div class="mouse">
+          <span></span>
+        </div>
+        <div class="arrow">
+          <span></span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- Hero ends here -->
 
-            <p id="sub">Sou um <strong>Desenvolvedor Web</strong> de 27 anos do Norte do Paraná. Meu foco atual é no Front-End, mas também crio aplicações Full-Stack (Front-End e Back-End).
-            <br />
-            <br />
-            <br />
-              <span>Sou apaixonado por <strong>Música</strong>. Minha maior motivação na área de Dev Web é poder utilizar a minha <strong>criatividade</strong> para a criação de aplicações incríveis.</span>
-            </p>
+  <section class="about-me" id="about-me">
+    <div class="container">
+      <div class="profile-info">
+        <div class="profile-description padding-right animate-left">
+          <div class="global-headline">
+            <h2 class="sub-headline">
+              <span class="first-letter">S</span>obre
+            </h2>
+            <h1 class="headline headline-dark">Quem sou eu?</h1>
+            <div class="asterisk animate-right">
+              <i class="fas fa-code custom-icon"></i>
+              <i class="fas fa-plus custom-icon"></i>
+              <i class="fas fa-music custom-icon"></i>
+            </div>
+          </div>
+          <p>
+            Sou um <strong>Desenvolvedor Web Full-Stack</strong> de 27 anos apaixonado por tecnologia e música. 
+            Estudando Desenvolvimento Web desde 2017, em Fevereiro de 2020 entrei em um Bootcamp de Programação Web Fullstack na Labenu que teve duração de 6 meses em período integral, onde adquiri conhecimentos e experiências de mais de 1000h de código, além de ter construído diversos projetos para fixar o conteúdo aprendido.
+          </p>
+        </div>
+        <div class="profile-info-img animate-right">
+          <img src="./images/bruno-perfil-edit.png" alt="Bruno perfil">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Me ends here -->
 
-            <button id="btn-projects" onclick="openCV()">
-              <i class="fa fa-arrow-down"></i>
-              Baixar CV
-            </button>
-            <div id="xtra-space"></div>
+  <section class="skills between" id="skills">
+    <div class="container container-skills">
+      <div class="global-headline">
+        <div class="animate-top">
+          <h2 class="sub-headline">
+            <span class="first-letter">S</span>kills
+          </h2>
+        </div>
+        <div class="animate-bottom">
+          <h1 class="headline">O que eu utilizo?</h1>
+        </div>
+      </div> 
+      <div class="skills-icons">
+        <a href="https://reactjs.org/" target="_blank">
+          <i class="fab fa-react react animate-right">
+            <p>React</p>
+          </i>
+        </a>
+        <a href="https://vuejs.org/" target="_blank">
+          <i class="fab fa-vuejs vue animate-right">
+            <p>Vue</p>
+          </i>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+          <i class="fab fa-js-square javascript animate-right">
+            <p>JavaScript</p>
+          </i>
+        </a>
+        <a href="https://wordpress.org/" target="_blank">
+          <i class="fab fa-wordpress wordpress animate-right">
+            <p>WordPress</p>
+          </i>
+        </a>
+        <a href="https://nodejs.org/" target="_blank">
+          <i class="fab fa-node-js node animate-right">
+            <p>NodeJS</p>
+          </i>
+        </a>
+        <a href="https://www.mysql.com" target="_blank">
+          <i class="fas fa-database sql animate-right">
+            <p>SQL</p>
+          </i>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">
+          <i class="fab fa-html5 html animate-right">
+            <p>HTML</p>
+          </i>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+          <i class="fab fa-css3-alt css animate-right">
+            <p>CSS</p>
+          </i>
+        </a>
+        <a href="https://github.com/" target="_blank">
+          <i class="fab fa-github github animate-right">
+            <p>GitHub</p>
+          </i>
+        </a>
+      </div>     
+    </div>
+  </section>
+  <!-- Skills ends here -->
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="profile-info portfolio-container">
+        <div class="image-group padding-right">
+          <div class="spotenu animate-left" onclick="openSpotenu()">
+            <h1>Spotenu</h1>
+          </div>
+          <div class="fourEddit animate-left" onclick="open4eddit()">
+            <h1>4eddit</h1>
+          </div>
+          <div class="rappi4 animate-left" onclick="openrappi4()">
+            <h1>rappi4</h1>
+          </div>
+          <div class="learn-more animate-left" onclick="openGithub()">
+            <h1>Ver mais</h1>
           </div>
         </div>
-      </section>
-
-      <!-- Projects -->
-      <section class="projects" id="projects">
-        <h3>Projetos</h3>
-
-        <div class="projects-container">
-          <div class="project-spotenu" onclick="openSpotenu()">Spotenu</div>
-          <div class="project-4eddit" onclick="open4eddit()">4eddit</div>
-          <div class="project-rappi4" onclick="openrappi4()">rappi4</div>
-          <div class="project-to-do-list" onclick="opentoDoList()">To-Do-List</div>
+        <div class="profile-description animate-right">
+          <div class="global-headline">
+            <h2 class="sub-headline">
+              <span class="first-letter">P</span>ortfolio
+            </h2>
+            <h1 class="headline-dark headline-portfolio">O QUE VENHO CONSTRUINDO</h1>
+            <div class="asterisk"><i class="fas fa-chevron-down custom-icon"></i></div>
+          </div>
+          <p>
+            Clique em algum projeto para mais informações.
+          </p>
         </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio ends here -->
 
-        <div id="xtra-space"></div>
-      </section>
+  <section class="coffee-container between">
+    <div class="container"></div>
+  </section>
+  <!-- "Be creative" ends here -->
 
-      <!-- Contact -->
-      <section class="contact" id="contact">
-        <h2>Contato</h2>
-
-        <p>Sinta-se livre para entrar em contato comigo através dos canais abaixo:</p>
-
-        <div class="contact-container">
-          <a href="mailto:brunohbulgaron@gmail.com">
-            <i class="fa fa-envelope"></i>
-            brunohbulgaron@gmail.com
-          </a>
-          <a href="https://github.com/brunobulgaron" target="_blank">
-            <i class="fa fa-github"></i>
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/brunobulgaron/" target="_blank">
-            <i class="fa fa-linkedin"></i>
-            LinkedIn
-          </a>
+  <section class="contact-form between" id="contact">
+    <div class="container container-contact-form">
+      <div class="global-headline">
+        <div class="animate-top">
+          <h2 class="sub-headline">
+            <span class="first-letter">C</span>ontato
+          </h2>
         </div>
-      </section>
+        <div class="animate-bottom">
+          <h1 class="headline">Vamos conversar?</h1>
+        </div>
+      </div>
+      <div class="contact-second animate-right">
+        <ul>
+          <li><a href="mailto:brunohbulgaron@gmail.com">
+            <i class="far fa-envelope"></i>
+          </a></li>
+          <p>E-mail</p>
+          <li><a href="https://api.whatsapp.com/send?phone=5543996268360&text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20%C3%A0%20respeito%20dos%20seus%20servi%C3%A7os%20de%20Desenvolvimento%20Web." target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a></li>
+          <p>WhatsApp</p>
+          <li><a href="https://www.linkedin.com/in/brunobulgaron/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a></li>
+          <p>LinkedIn</p>
+          <li><a href="https://github.com/brunobulgaron" target="_blank">
+            <i class="fab fa-github"></i>
+          </a></li>
+          <p>GitHub</p>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Form ends here -->
 
-      <!-- Footer -->
-      <footer>
-        <p>2020 - Criado por Bruno Bulgaron</p>
-      </footer>
-    </main>
-  </div>
+  <section class="keys between">
+    <div class="container"></div>
+    <p id="credits" class="animate-left">
+      Ao vivo com a Banda <strong>Spitfire</strong><br>
+      Armazén Bar, Maringá - PR<br>
+      14/12/2019
+    </p>
+  </section>
+  <!-- Keyboard ends here -->
 
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="script.js"></script>
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-content-about">
+          <p>
+            2020 - Bruno Bulgaron
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/typed.js"></script>
+  <script defer src="./main.js"></script>
 </body>
 </html>
