@@ -2,7 +2,7 @@
 
 ## About
 
-This is a simple portfolio that I've had to build as one of the last Labenu projects.
+This is a simple portfolio that I've had to build while I was at Labenu's Bootcamp.
 
 ## Live demo
 
